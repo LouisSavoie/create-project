@@ -14,5 +14,5 @@ project_name = gets.chomp
 client = Octokit::Client.new(:access_token => "#{github_token}")
 client.create_repository("#{project_name}")
 
-# Create project dir, git init, add remote, create readme, git add all, initial commit, push to GitHub
-system( "cd .. && mkdir #{project_name} && cd #{project_name} && git init && git remote add origin https://github.com/#{github_name}/#{project_name}.git && touch README.md && git add . && git commit -m \"initial commit\" && git push -u origin master && code README.md" )
+# Run shell script to: Create project dir, git init, add remote, create readme, git add all, initial commit, push to GitHub
+system( "chmod +x local_commands.sh && bash -i ./local_commands.sh #{project_name} #{github_name}" )
