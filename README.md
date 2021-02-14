@@ -17,7 +17,7 @@ A Ruby / Shell script for automation of creating new projects.
 
 ## How to use
 
-1. clone the repo to your $PATH and navigate into it
+1. clone the repo, add it to your $PATH, and navigate into it.
 2. Install dotenv `gem install dotenv`
 3. Install Octokit `gem install octokit`
 4. Create a dotenv file `touch .env`
