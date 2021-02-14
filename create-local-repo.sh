@@ -1,7 +1,7 @@
 PROJECT_NAME=$1
 GITHUB_NAME=$2
 
-cd ..
+cd ~/repos/
 mkdir $PROJECT_NAME
 cd $PROJECT_NAME
 git init
@@ -10,4 +10,4 @@ touch README.md
 git add .
 git commit -m "initial commit"
 git push -u origin master
-code README.md
+code .

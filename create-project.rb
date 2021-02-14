@@ -15,4 +15,4 @@ client = Octokit::Client.new(:access_token => "#{github_token}")
 client.create_repository("#{project_name}")
 
 # Run shell script to: Create project dir, git init, add remote, create readme, git add all, initial commit, push to GitHub
-system( "chmod +x local_commands.sh && bash -i ./local_commands.sh #{project_name} #{github_name}" )
+system( "chmod +x create-local-repo.sh && ./create-local-repo.sh #{project_name} #{github_name}" )
