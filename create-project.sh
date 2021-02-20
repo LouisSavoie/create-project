@@ -1,2 +1,2 @@
-chmod +x create-project.rb
-ruby create-project.rb
+chmod +x /usr/local/bin/create-project/create-project.rb
+ruby /usr/local/bin/create-project/create-project.rb

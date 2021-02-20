@@ -17,10 +17,9 @@ A Ruby / Shell script for automation of creating new projects.
 
 ## How to use
 
-1. clone the repo, add it to your $PATH, and navigate into it.
-2. Install dotenv `gem install dotenv`
-3. Install Octokit `gem install octokit`
-4. Create a dotenv file `touch .env`
-5. [Generate a GitHub Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and add it to the .env file like this: GITHUB_TOKEN=tokenhere
-6. Add your GitHub username to the .env file like this: GITHUB_NAME=usernamehere
-7. Run the script with `bash create-project.sh`, enter the name of your new project and away you go!
+1. clone the repo to `/usr/local/bin`, [add it to your $PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/), and navigate into it.
+2. Install gems `bundle install`
+3. Create a dotenv file `touch .env`
+4. [Generate a GitHub Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and add it to the .env file like this: GITHUB_TOKEN=tokenhere
+5. Add your GitHub username to the .env file like this: GITHUB_NAME=usernamehere
+6. Run the script with `bash create-project.sh`, enter the name of your new project and away you go!
